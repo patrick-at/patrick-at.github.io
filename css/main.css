@@ -13,8 +13,11 @@ body {
 
 main {
   max-width: 1600px;
-  padding: 6rem;
+  padding: 4rem;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
 }
 
 picture.page-background {
@@ -33,7 +36,6 @@ picture.page-background {
 
 section {
   color: #ffffff;
-  margin-top: 4rem;
 }
 
 section.intro {
@@ -96,20 +98,27 @@ section.intro .intro-title .intro-title-cards .card:hover {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-section.about {
-  display: block;
+section.articles {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
 }
-section.about .about-title {
+
+article .article-title {
   font-size: 2rem;
   font-weight: 700;
 }
-section.about .about-body {
+
+article.about {
+  display: block;
+}
+article.about .about-body {
   display: flex;
   align-items: flex-start;
   gap: 1rem;
   margin-top: 1rem;
 }
-section.about .about-body picture {
+article.about .about-body picture {
   grid-area: pic;
   width: 240px;
   height: 240px;
@@ -117,11 +126,11 @@ section.about .about-body picture {
   overflow: hidden;
   flex-shrink: 0;
 }
-section.about .about-body picture img {
+article.about .about-body picture img {
   width: 100%;
   height: 100%;
 }
-section.about .about-body .about-content {
+article.about .about-body .about-content {
   background-color: rgba(255, 255, 255, 0.1);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
@@ -129,25 +138,28 @@ section.about .about-body .about-content {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 0.75rem;
 }
-section.about .about-body .about-content .description {
+article.about .about-body .about-content .description {
   max-width: 640px;
   min-width: 320px;
   text-align: justify;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
-section.about .about-body .about-content .contact {
-  margin-top: 2rem;
+article.about .about-body .about-content .contact {
+  margin-top: 1rem;
 }
-section.about .about-body .about-content .contact .contact-title {
+article.about .about-body .about-content .contact .contact-title {
   font-weight: 700;
   font-size: 1.25rem;
 }
-section.about .about-body .about-content .contact .contact-cards {
+article.about .about-body .about-content .contact .contact-cards {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+  flex-direction: column;
+  gap: 0.25rem;
   margin-top: 1rem;
 }
-section.about .about-body .about-content .contact .contact-cards .contact-card {
+article.about .about-body .about-content .contact .contact-cards .contact-card {
   display: flex;
   background-color: rgba(0, 0, 0, 0.5);
   width: -moz-fit-content;
@@ -162,7 +174,7 @@ section.about .about-body .about-content .contact .contact-cards .contact-card {
   text-decoration: none;
   color: #ffffff;
 }
-section.about .about-body .about-content .contact .contact-cards .contact-card img {
+article.about .about-body .about-content .contact .contact-cards .contact-card img {
   width: 16px;
   height: 16px;
 }/*# sourceMappingURL=main.css.map */

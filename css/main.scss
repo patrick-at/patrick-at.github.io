@@ -17,8 +17,11 @@ body {
 
 main {
     max-width: 1600px;
-    padding: 6rem;    
+    padding: 4rem;    
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
 }
 
 picture.page-background {
@@ -37,7 +40,6 @@ picture.page-background {
 
 section {
     color: $on-background;
-    margin-top: 4rem;
 }
 
 section.intro {
@@ -118,14 +120,22 @@ section.intro {
     }
 }
 
-section.about {
-    display: block;
-       
-    .about-title {
+section.articles {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+article {
+    .article-title {
         font-size: 2rem;
         font-weight: 700;
     }
-    
+}
+
+article.about {
+    display: block;
+
     .about-body {
         display: flex;
         align-items: flex-start;
@@ -157,11 +167,14 @@ section.about {
                 max-width: 640px;
                 min-width: 320px;
                 text-align: justify;
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
                 
             }
             
             .contact {
-                margin-top: 2rem;
+                margin-top: 1rem;
                 
                 .contact-title {
                     font-weight: 700;
@@ -170,8 +183,8 @@ section.about {
                 
                 .contact-cards {
                     display: flex;
-                    flex-wrap: wrap;
-                    gap: 0.5rem;
+                    flex-direction: column;
+                    gap: 0.25rem;
                     margin-top: 1rem;
 
                     .contact-card {
