@@ -1,4 +1,4 @@
-clave = "fdsivnsaiofn3q487fnv0qernv0sfd43288050gj0492wgj9t8hj-w-85g-32fjg"
+clave = "ghp_349v090f9vj0324jf0wrv=9mg=4m5g=4952mg5535tgt"
 
 print(123)
 print(234)
