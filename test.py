@@ -1,4 +1,4 @@
-clave = "ghp_349v090f9vj0324jf0wrv=9mg=4m5g=4952mg5535tgt"
+clave = "ghp_349v090f9vj0324jf0wrv9mg4m5g4952mg5535tgt"
 
 print(123)
 print(234)
